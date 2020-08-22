@@ -125,15 +125,15 @@
   <!-- CREATE GUIDE MODAL -->
   <div id="modal-create" class="modal" style="color: #1d142e">
     <div class="modal-content">
-      <h4>Create Guide</h4><br />
+      <h4>Create Post</h4><br />
       <form id="create-form">
         <div class="input-field">
           <input type="text" id="title" required>
-          <label for="title">Guide Title</label>
+          <label for="title">Title</label>
         </div>
         <div class="input-field">
           <textarea id="content" class="materialize-textarea" required></textarea>
-          <label for="content">Guide Content</label>
+          <label for="content">Content</label>
         </div>
         <button class="btn yellow darken-2 z-depth-0">Create</button>
       </form>
@@ -155,28 +155,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAAJhwNTZ_L8Ef7a0FH9oSV46V2ojfgNC4",
-    authDomain: "dear-diary-v.firebaseapp.com",
-    databaseURL: "https://dear-diary-v.firebaseio.com",
-    projectId: "dear-diary-v",
-    storageBucket: "dear-diary-v.appspot.com",
-    messagingSenderId: "759726528125",
-    appId: "1:759726528125:web:b4de0544978de211af8314",
-    measurementId: "G-BFKVG5FDRD"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  // make auth and firestore references
-  const auth = firebase.auth();
-  const db = firebase.firestore();
-  // update firestore setting
-
-//   db.settings( {timestampsInSnapshots: true});
-</script>
+<script type="text/javascript" src="config.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/auth.js"></script>
